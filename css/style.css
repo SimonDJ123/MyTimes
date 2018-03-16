@@ -1,0 +1,163 @@
+header {
+  display: inline-flex;
+  align-items: center;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  width: 80%;
+  border: solid 1px black;
+}
+.logo img {
+  margin-right: 12px;
+}
+.logo span {
+  display: inline-flex;
+  color: MediumAquamarine;
+}
+nav {
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+}
+nav span {
+  display: inline-block;
+}
+#navigation {
+  padding: 10px 20px;
+  color: black;
+  text-decoration-style: underline;
+}
+.content {
+  display: inline-flex;
+  width: 100%;
+  padding-top: 120px;
+  border-bottom: solid black 1px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.large {
+  width: 630px;
+  padding-bottom: 50px;
+}
+.lead-story span {
+display: inline-flex;
+  width: 100%;
+  height: 300px;
+  background-image: url(/Users/simondjanogly/MyTimes/css/Images/Phish.png);
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.narrative span {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.lead-story .narrative {
+  display: flex;
+  justiy-content: space-between;
+}
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.vacation-burger {
+width: 630px;
+height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.burger {
+  font-size: 22px;
+}
+.vacation {
+  font-size: 22px;
+}
+.vacation span {
+  font-weight: bold;
+  font-size: 25px;
+}
+.burger span {
+  font-weight: bold;
+  font-size: 25px;
+}
+.spining-research {
+  display: inline-flex;
+  flex-direction: row;
+}
+.spinning span {
+display: flex;
+width: 100%;
+height: 300px;
+  border: solid 1px black;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  background-image: url(/Users/simondjanogly/MyTimes/css/Images/Fall-Season.png);
+}
+.research {
+  border: solid black 1px;
+  display: flex;
+  width: 100%;
+  height: 300px;
+    border: solid 1px black;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    background-image: url(/Users/simondjanogly/MyTimes/css/images/Hipster.png);
+}
+.medium {
+  width: 300px;
+  border: solid 1px black;
+}
+.fbi span {
+  font-weight: bold;
+  font-size: 25px;
+}
+.cats {
+  border: solid 1px black;
+}
+.cats span {
+  display: block;
+  width: auto;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url(/Users/simondjanogly/MyTimes/css/images/Cat.png);
+height: 300px;
+}
+.small {
+  width: 240px;
+  border: solid 1px black;
+  margin-right: 10px;
+}
+.bites {
+  border: solid 1px black;
+}
+.bites span {
+  font-weight: bold;
+  font-size: 25px;
+}
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
