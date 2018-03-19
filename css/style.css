@@ -1,20 +1,27 @@
+body {
+  display: block;
+}
 header {
   display: inline-flex;
   align-items: center;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  height: 100px;
+  height: 80px;
   width: 100%;
   position: fixed;
+  z-index: 1;
+  flex-grow: 1;
   border-bottom: 1px solid black;
   background-color: white;
+  top: 0px;
 }
 .logo {
   display: inline-flex;
   align-items: center;
   width: 80%;
-  border: solid 1px black;
+  padding-left: 30px;
+  flex-grow: 1;
 }
 .logo img {
   margin-right: 12px;
@@ -27,9 +34,10 @@ nav {
   display: flex;
   width: auto;
   justify-content: flex-end;
+  padding-right: 40px;
 }
 nav span {
-  display: inline-block;
+  padding: 20px 10px;
 }
 #navigation {
   padding: 10px 20px;
@@ -37,22 +45,27 @@ nav span {
   text-decoration-style: underline;
 }
 .content {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   padding-top: 120px;
   border-bottom: solid black 1px;
   justify-content: space-between;
   flex-direction: row;
 }
-.large {
+.column.large {
   width: 630px;
   padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .lead-story span {
-display: inline-flex;
+display: flex;
   width: 100%;
   height: 300px;
   background-image: url(/Users/simondjanogly/MyTimes/css/Images/Phish.png);
+  font-family: Georgia;
   font-size: 40px;
   font-weight: bold;
   color: white;
@@ -62,7 +75,7 @@ display: inline-flex;
   font-size: 17px;
   color: black;
 }
-.lead-story .narrative {
+.lead-story.narrative {
   display: flex;
   justiy-content: space-between;
 }
@@ -72,17 +85,20 @@ p {
   color: black;
 }
 .vacation-burger {
-width: 630px;
-height: auto;
+  width: 630px;
+  height: auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-}
-.burger {
-  font-size: 22px;
 }
 .vacation {
   font-size: 22px;
+  justify-content: flex-start;
+  width: 300px;
+}
+.burger {
+  font-size: 22px;
+  justify-content: flex-end;
+  width: 300px;
 }
 .vacation span {
   font-weight: bold;
@@ -92,47 +108,42 @@ height: auto;
   font-weight: bold;
   font-size: 25px;
 }
-.spining-research {
-  display: inline-flex;
-  flex-direction: row;
+.spinning-research {
+  display: flex;
+  justify-content: space-between;
 }
 .spinning span {
-display: flex;
-width: 100%;
-height: 300px;
-  border: solid 1px black;
+  display: flex;
+  height: 300px;
+  width: 300px;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-image: url(/Users/simondjanogly/MyTimes/css/Images/Fall-Season.png);
 }
-.research {
-  border: solid black 1px;
+.research span {
   display: flex;
-  width: 100%;
   height: 300px;
-    border: solid 1px black;
-    font-family: Georgia;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    background-image: url(/Users/simondjanogly/MyTimes/css/images/Hipster.png);
-}
-.medium {
   width: 300px;
-  border: solid 1px black;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  justify-content: flex-end;
+  background-image: url(/Users/simondjanogly/MyTimes/css/images/Hipster.png);
+}
+.column.medium {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 .fbi span {
   font-weight: bold;
   font-size: 25px;
-}
-.cats {
-  border: solid 1px black;
 }
 .cats span {
   display: block;
@@ -142,22 +153,53 @@ height: 300px;
   font-size: 30px;
   color: white;
   background-image: url(/Users/simondjanogly/MyTimes/css/images/Cat.png);
-height: 300px;
+  height: 300px;
+  text-align: center;
 }
-.small {
+.column.small {
+  display: flex;
   width: 240px;
-  border: solid 1px black;
-  margin-right: 10px;
+  margin-right: 32px;
+  flex-direction: column;
 }
-.bites {
-  border: solid 1px black;
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 41px;
 }
 .bites span {
-  font-weight: bold;
-  font-size: 25px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  margin: 0px;
+  border-bottom: 1px solid black;
+  padding: 11px 20px;
+  display: block;
 }
 p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+footer {
+  display: flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 325px;
+  align-items: center;
+  justify-content: center;
+}
+footer .title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+footer #navigation {
+  padding-left: 25px;
 }
