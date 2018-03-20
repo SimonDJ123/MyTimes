@@ -1,69 +1,87 @@
-body {
+div {
   display: block;
 }
+/* Header - this is step 1 */
+
 header {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid black;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  height: 80px;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  flex-grow: 1;
-  border-bottom: 1px solid black;
-  background-color: white;
-  top: 0px;
-}
+  }
+
 .logo {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  width: 80%;
-  padding-left: 30px;
   flex-grow: 1;
+  padding-left: 30px;
 }
+
 .logo img {
+  width: 70px;
+  height: 60px;
   margin-right: 12px;
 }
+
 .logo span {
-  display: inline-flex;
   color: MediumAquamarine;
 }
-nav {
-  display: flex;
-  width: auto;
-  justify-content: flex-end;
+
+header nav {
   padding-right: 40px;
 }
+
+a {
+  color: black;
+}
+
 nav span {
+  display: inline-block;
   padding: 20px 10px;
 }
-#navigation {
-  padding: 10px 20px;
-  color: black;
-  text-decoration-style: underline;
+
+body {
+  margin: 0;
 }
+
+/* Main Content Container - this is step 2 */
+
 .content {
   display: flex;
   width: 1232px;
-  margin: 0px auto 78px auto;
+  margin: 0 auto 78px auto;
   padding-top: 116px;
 }
+
 .column {
   display: flex;
   flex-direction: column;
   margin-right: 32px;
 }
+
+/* Column Widths */
+
 .column.large {
   width: 630px;
 }
-.lead-story {
-display: block;
+
+.column.medium {
+  width: 300px;
 }
-.lead-story .image-content {
-  background-image: url(/Users/simondjanogly/MyTimes/css/Images/Phish.png);
-  }
+
+.column.small {
+  width: 240px;
+}
+
+/* Add images - this is step 3 */
+
 .image-content {
   height: 300px;
   margin-top: 15px;
@@ -73,126 +91,92 @@ display: block;
   color: white;
   text-align: center;
 }
-.narrative {
-  margin-top: 16px;
-  }
-p {
-  display: block;
-  }
+
+.lead-story .image-content {
+  background-image: url(/Users/simondjanogly/MyTimes/css/Images/Phish.png);
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+
+.fall-cancelled.image-content {
+  background-image: url(/Users/simondjanogly/MyTimes/css/Images/Fall-Season.png);
+}
+
+.research.image-content {
+  background-image: url(/Users/simondjanogly/MyTimes/css/images/Hipster.png);
+}
+
+.cat-ceo.image-content {
+  background-image: url(/Users/simondjanogly/MyTimes/css/images/Cat.png);
+}
+
+/* Make stories flexible - step 4 */
+
 .stories {
   display: flex;
   justify-content: space-between;
   margin-top: 17px;
 }
+
+.stories .text-content {
+  height: 250px;
+}
+
 .story {
   display: flex;
   flex-direction: column;
   width: 300px;
 }
-.stories .text-content {
-  height: 250px;
+
+.narrative {
+  margin-top: 16px;
 }
-.text-content {
-  display: block;
+
+/* New Bites - step 5 */
+
+img.cookie {
+  height: 240px;
 }
-h2 {
-  display: block;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 19.92px;
-}
-.vacation {
-  font-size: 22px;
-  justify-content: flex-start;
-  width: 300px;
-}
-.fall-cancelled.image-content {
-  background-image: url(/Users/simondjanogly/MyTimes/css/Images/Fall-Season.png);
-}
-.burger {
-  font-size: 22px;
-  justify-content: flex-end;
-  width: 300px;
-}
-.vacation span {
-  font-weight: bold;
-  font-size: 25px;
-}
-.burger span {
-  font-weight: bold;
-  font-size: 25px;
-}
-.spinning-research {
-  display: flex;
-  justify-content: space-between;
-}
-.research span {
-  display: flex;
-  height: 300px;
-  width: 300px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  justify-content: flex-end;
-  background-image: url(/Users/simondjanogly/MyTimes/css/images/Hipster.png);
-}
-.column.medium {
-  width: 300px;
-}
-.fbi span {
-  font-weight: bold;
-  font-size: 25px;
-}
-.cats span {
-  display: block;
-  width: auto;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  background-image: url(/Users/simondjanogly/MyTimes/css/images/Cat.png);
-  height: 300px;
-  text-align: center;
-}
-.column.small {
-  width: 240px;
-}
-h3 {
+
+.news-bites h3 {
+  margin-bottom: 41px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  margin-top: 16px;
-  margin-bottom: 41px;
 }
-.bites span {
+
+.news-bites .bite {
+  display: block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
   background-color: WhiteSmoke;
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
-  margin: 0px;
-  border-bottom: 1px solid black;
-  padding: 11px 20px;
-  display: block;
 }
-p {
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
+
+.bite span {
+  padding-left: 11px;
 }
+
+/* Footer -step 6 */
+
 footer {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
   display: flex;
   background-color: MediumAquamarine;
   margin: auto;
   font-family: Verdana;
   font-size: 12px;
-  height: 325px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
-.title {
+
+footer .title {
   display: inline-block;
   padding-right: 25px;
   border-right: 2px solid white;
@@ -201,19 +185,8 @@ footer {
   font-weight: bold;
   color: white;
 }
+
 footer nav {
   display: inline-block;
   padding-left: 25px;
-}
-nav span {
-  display: inline-block;
-  padding: 20px 10px;
-}
-a {
-  color: black;
-  cursor: pointer;
-  text-decoration: underline;
-}
-.copyright {
-  display: block;
 }
