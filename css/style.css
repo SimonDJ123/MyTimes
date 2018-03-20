@@ -46,54 +46,68 @@ nav span {
 }
 .content {
   display: flex;
-  width: 100%;
-  padding-top: 120px;
-  border-bottom: solid black 1px;
-  justify-content: space-between;
-  flex-direction: row;
+  width: 1232px;
+  margin: 0px auto 78px auto;
+  padding-top: 116px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
 }
 .column.large {
   width: 630px;
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
-.lead-story span {
-display: flex;
-  width: 100%;
-  height: 300px;
+.lead-story {
+display: block;
+}
+.lead-story .image-content {
   background-image: url(/Users/simondjanogly/MyTimes/css/Images/Phish.png);
+  }
+.image-content {
+  height: 300px;
+  margin-top: 15px;
   font-family: Georgia;
-  font-size: 40px;
   font-weight: bold;
+  font-size: 30px;
   color: white;
+  text-align: center;
 }
-.narrative span {
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
-}
-.lead-story.narrative {
-  display: flex;
-  justiy-content: space-between;
-}
+.narrative {
+  margin-top: 16px;
+  }
 p {
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
-}
-.vacation-burger {
-  width: 630px;
-  height: auto;
+  display: block;
+  }
+.stories {
   display: flex;
   justify-content: space-between;
+  margin-top: 17px;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.stories .text-content {
+  height: 250px;
+}
+.text-content {
+  display: block;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 19.92px;
 }
 .vacation {
   font-size: 22px;
   justify-content: flex-start;
   width: 300px;
+}
+.fall-cancelled.image-content {
+  background-image: url(/Users/simondjanogly/MyTimes/css/Images/Fall-Season.png);
 }
 .burger {
   font-size: 22px;
@@ -112,18 +126,6 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.spinning span {
-  display: flex;
-  height: 300px;
-  width: 300px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  justify-content: flex-start;
-  background-image: url(/Users/simondjanogly/MyTimes/css/Images/Fall-Season.png);
-}
 .research span {
   display: flex;
   height: 300px;
@@ -138,8 +140,6 @@ p {
 }
 .column.medium {
   width: 300px;
-  display: flex;
-  flex-direction: column;
 }
 .fbi span {
   font-weight: bold;
@@ -157,10 +157,7 @@ p {
   text-align: center;
 }
 .column.small {
-  display: flex;
   width: 240px;
-  margin-right: 32px;
-  flex-direction: column;
 }
 h3 {
   font-size: 16px;
@@ -193,13 +190,30 @@ footer {
   height: 325px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-footer .title {
+.title {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
   font-family: Georgia;
   font-size: 16px;
   font-weight: bold;
   color: white;
 }
-footer #navigation {
+footer nav {
+  display: inline-block;
   padding-left: 25px;
+}
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.copyright {
+  display: block;
 }
